@@ -1,0 +1,6 @@
+<ng-container>
+    <div class="card-margin " [ngStyle]="{'background-color' : item.isActive===true ? 'gray' : 'white' }"
+     *ngFor="let item of menu" (click)="click(item)">
+        <section class="menu-text">{{item[name]}}</section>
+    </div>
+</ng-container>

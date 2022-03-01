@@ -1,0 +1,35 @@
+label {
+    color: #333;
+    height: 20px;
+    font-size: large;
+    margin-right:15px;
+    font-weight:bold
+}
+
+.heading-margin{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-right{
+    float: right;
+}
+
+.btn-class{
+    background: orange;
+    border: 0px;
+    color: white;
+    width: 50px;
+    font-size: larger;
+}
+
+.outer-border{
+    margin-top: 10px;
+   border: 1px solid #d5d2d2;
+   border-radius: 0.25rem;
+}
+
+.card{
+    border: 1px solid black !important;
+    
+}

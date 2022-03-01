@@ -1,0 +1,32 @@
+<div class="container outer-border">
+    <div class="row ">
+        <div class="col-sm-3 card">
+            <div class="heading-margin">
+                <label>Menu Sections</label>
+                <button class="btn-class btn-right" (click)="addItem($event,1)">Add</button>
+            </div>
+            <app-menu-card [menu]="sections" id="id" name="name" (onClick)="loadItems($event, 2)"></app-menu-card>
+        </div>
+        <div class="col-sm-3 card">
+            <div class="heading-margin">
+                <label>Items</label>
+                <button class="btn-class btn-right" (click)="addItem($event,2)">Add</button>
+            </div>
+            <app-menu-card [menu]="items" id="id" name="title" (onClick)="loadItems($event, 3)"></app-menu-card>
+        </div>
+        <div class="col-sm-3 card">
+            <div class="heading-margin">
+                <label> Item Options</label>
+                <button class="btn-class btn-right" (click)="addItem($event,3)">Add</button>
+            </div>
+            <app-menu-card [menu]="options" id="id" name="name" (onClick)="loadItems($event, 4)"></app-menu-card>
+        </div>
+        <div class="col-sm-3 card">
+            <div class="heading-margin">
+                <label>Option Choices</label>
+                <button class="btn-class btn-right" (click)="addItem($event,4)">Add</button>
+            </div>
+            <app-menu-card [menu]="choices" id="id" name="name" (onClick)="loadItems($event, 5)"></app-menu-card>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<div mat-dialog-content style="height: 200px; overflow: hidden;">
+    <h2><b>Add New {{title}}</b></h2>
+    <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Name</mat-label>
+        <input matInput [(ngModel)]="name" required>
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Price</mat-label>
+        <input type="number" matInput [(ngModel)]="price">
+    </mat-form-field>
+</div>
+<div mat-dialog-actions>
+    <button class="btn btn-danger" (click)="onNoClick()">Cancel</button>
+    <button class="btn btn-primary mgn-left"  color="primary" (click)="addItem()"
+      cdkFocusInitial>Add</button>
+  
+  </div>
